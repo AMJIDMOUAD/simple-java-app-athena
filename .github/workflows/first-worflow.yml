@@ -7,7 +7,7 @@ jobs:
   main_workflow:
   
     name : main_job
-    run-on: java-latest
+    runs-on: java-latest
     
     steps:
       - name: chckout step
