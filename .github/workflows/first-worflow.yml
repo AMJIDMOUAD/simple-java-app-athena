@@ -5,12 +5,11 @@ on:
       "main"
 jobs:
   main_workflow:
-  
-    name : main_job
+    name : main_workflow
     runs-on: java-latest
     
     steps:
-      - name: chckout step
+      - name: chekout step
         run: actions/checkout@v3
 
       - name: mvn clean 
