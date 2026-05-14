@@ -1,0 +1,17 @@
+name: java workflow
+on:
+  push:
+    branches:
+      "main"
+jobs:
+  main_workflow:
+  
+    name : main_job
+    run-on: java-latest
+    
+    steps:
+      - name: chckout step
+        run: actions/checkout@v3
+
+      - name: mvn clean 
+        run : mvn clean package
