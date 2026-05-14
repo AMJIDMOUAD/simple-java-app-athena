@@ -9,8 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: chekout step
+      - name: checkout
         run: actions/checkout@v3
 
       - name: mvn clean 
         run : mvn clean package
+        shell: bash
