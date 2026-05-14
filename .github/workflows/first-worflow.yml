@@ -14,4 +14,4 @@ jobs:
 
       - name: mvn clean 
         run : mvn clean package
-        shell: bash
+        shell: bash 
