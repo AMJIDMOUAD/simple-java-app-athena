@@ -1,0 +1,16 @@
+name: pull event workflow
+
+on:
+  workflow_dispatch:
+  pull_event:
+    branches:
+      - main
+
+jobs:
+  push_workflow:
+    name: pull_event-main-branch
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "pull_event to main branch just happened"
