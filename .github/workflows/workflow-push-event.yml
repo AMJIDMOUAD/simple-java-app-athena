@@ -1,4 +1,4 @@
-name: java workflow
+name: push main workflow
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  main_workflow:
+  push_workflow:
     name: trigger-main-branch
     runs-on: ubuntu-latest
 
