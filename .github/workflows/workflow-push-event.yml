@@ -1,0 +1,14 @@
+name: java workflow
+on:
+  workflow-dispatch:
+  push:
+    branches: "main"
+
+jobs:
+  main_workflow:
+    name : trigger-main-branch
+    runs-on: ubuntu-latest
+    
+    steps:
+      run: echo "push happen to main branch"
+      
