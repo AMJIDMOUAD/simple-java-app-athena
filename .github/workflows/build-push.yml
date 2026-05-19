@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: amjidcloud/appGactions:$GITHUB_REF
+          tags: <amjidcloud>/java-app:$GITHUB_REF
